@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activites.MainActivity"
+    android:background="@drawable/gradient_background"
+    >
+
+    <TextView
+        android:id="@+id/faturalabel"
+        android:layout_marginTop="92dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="@string/fatura_label"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotomedium"
+        android:layout_centerHorizontal="true"
+        android:layout_width="159dp"
+        android:layout_height="23dp"/>
+
+    <TextView
+        android:id="@+id/fatura_value"
+        android:layout_below="@+id/faturalabel"
+        android:layout_marginTop="11dp"
+        android:textSize="46sp"
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotobold"
+        android:layout_centerHorizontal="true"
+        android:layout_width="251dp"
+        android:layout_height="54dp"/>
+
+    <LinearLayout
+        android:id="@+id/label_disponivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/fatura_value"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="@string/label_diponível"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotolight"
+            />
+    <TextView
+        android:id="@+id/limite_value"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotolight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="35dp"
+        android:id="@+id/recyclerViewDespesas"
+        android:layout_below="@id/label_disponivel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_despesa"/>
+
+    
+
+
+</RelativeLayout>

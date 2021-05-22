@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Prova2</string>
+    <string name="fatura_label">FATURA ATUAL</string>
+    <string name="label_diponível">Disponível&#160;</string>
+</resources>

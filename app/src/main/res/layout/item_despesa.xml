@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60.2dp"
+    android:layout_marginLeft="31dp"
+    android:layout_marginRight="48.4dp"
+    android:layout_marginBottom="35dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="9dp">
+
+    <ImageView
+        android:id="@+id/typebill_icon"
+        android:layout_width="39dp"
+        android:layout_height="39dp"/>
+    <RelativeLayout
+        android:layout_marginLeft="17.9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/typebill_icon">
+        <RelativeLayout
+            android:id="@+id/caixa_de_cima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotoregular"
+            android:id="@+id/cobrador_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:id="@+id/valor_gasto"
+            android:fontFamily="@font/robotoregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caixa_de_cima">
+
+            <TextView
+                android:id="@+id/cobrador_type"
+                android:textColor="@color/almost_white"
+                android:textSize="14sp"
+                android:fontFamily="@font/robotoregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/almost_white"
+                android:id="@+id/hora"
+                android:textSize="14sp"
+                android:fontFamily="@font/robotoregular"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
